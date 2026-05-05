@@ -6,3 +6,6 @@ I will learn from Gemini what I should learn and where I should start
 My carrer path will explain what I can do for the future client
 Sharing my personal life will explain that I am a reliable partner
 Commit is created and I am not sure what it means
+VS code and Git program install completed
+But I need step by step guidance from Gemini she is very supportive
+git config --global user.name "aepark0120"
