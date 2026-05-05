@@ -10,3 +10,4 @@ VS code and Git program install completed
 But I need step by step guidance from Gemini she is very supportive
 git config --global user.name "aepark0120"
 Lesson 1 Creat accont in github Install VS code Running Commit
+Lesson 2 index.html creation how to crate table with | <> </> to use '\| :-- |'
