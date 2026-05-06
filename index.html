@@ -3,7 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aepark0120 | Portfolio</title>
+<style>
+    /* 기본 테마 설정 */
+    :root {
+        --primary-color: #f97316;    /* 신뢰감을 주는 블루 */
+        --secondary-color: #475569;  /* 활력을 주는 오렌지 */
+        --bg-color: #fff7ed;         /* 아주 연한 그레이 배경 */
+        --text-color: #431407;       /* 짙은 차콜색 글자 */
+        --card-bg: #ffffff;          /* 카드 배경색 */
+    }
+
+    body {
+        background-color: var(--bg-color);
+        font-family: 'Pretendard', 'Inter', -apple-system, sans-serif;
+        line-height: 1.7;
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 상단 메뉴바 */
+    nav {
+        width: 100%;
+        background: var(--card-bg);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+    }
+
+    nav b {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        letter-spacing: -1px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    /* 메인 카드 레이아웃 */
+    main {
+        max-width: 800px;
+        width: 90%;
+        margin: 3rem 0;
+        background: var(--card-bg);
+        padding: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+        letter-spacing: -0.05em;
+    }
+
+    h1 b { color: var(--primary-color); }
+
+    h3 {
+        color: var(--secondary-color);
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+
+    ul {
+        padding-left: 1.2rem;
+    }
+
+    li {
+        margin-bottom: 0.8rem;
+    }
+
+    footer {
+        margin-bottom: 3rem;
+        color: #94a3b8;
+        font-size: 0.9rem;
+    }
+</style>
 </head>
 <body>
 
@@ -14,7 +112,7 @@
             <li>Home</li>
             <li>About</li>
             <li>Projects</li>
-            <li>Contact</li>
+            <li>aepark0120@gmail.com</li>
         </ul>
     </nav>
 
@@ -22,11 +120,11 @@
 
     <!-- 메인 컨텐츠 -->
     <main>
-        <h1>Welcome to My Professional Space</h1>
-        <p>I am a freelancer building a career based on <b>trust</b> and <b>consistency</b>.</p>
+        <h1> Welcome 반갑습니다</h1>
+        <p> A freelancer for <b>clinical trial project management </b> building a career based on <b>trust</b> and <b>consistency</b>.</p>
         
         <h3>Current Status</h3>
-        <p>Preparing for the future by learning web development and recording my growth every day.</p>
+        <p>Leaning web development and recording my growth every day.</p>
     </main>
 
     <hr>
