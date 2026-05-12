@@ -101,6 +101,15 @@
         color: #94a3b8;
         font-size: 0.9rem;
     }
+    /* 이 코드가 있어야 'card'라는 이름표를 붙인 상자가 예뻐집니다 */
+.card {
+    background-color: white;      /* 배경은 하얗게 */
+    border: 1px solid #ddd;       /* 연한 회색 테두리 */
+    border-radius: 12px;          /* 모서리를 둥글게 */
+    padding: 20px;                /* 안쪽 여백 (글자와 테두리 사이) */
+    margin-bottom: 20px;          /* 상자 바깥 아래쪽 여백 (상자끼리 거리 두기) */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* 은은한 그림자 */
+}
 @media (max-width: 600px) {
     body {
         margin: 20px;
@@ -157,13 +166,13 @@
     <hr>
 
     <!-- Projects 섹션 시작 -->
-    <section id="projects-section" class="card">
-        <h2>My Projects</h2>
-        <p> Documentation is important. </p>
-    
-    <div class="project-item">
+    <section id="projects-section">
+        <h2 style=""margin-left: 10px;">My Projects</h2>
+            
+    <div class="project-item card">
         <h3>Project 1: Buidling my own place_Homepage</h3>
         <p> By myself With Gemini's teaching </p>
+        <p> Documentation is important. </p>
     </div>
 
 </section>
@@ -171,9 +180,8 @@
 
     <!-- 하단 정보 (Footer) -->
     <footer>
-        <p>© 2026 aepark0120. All rights reserved.</p>
+        <p>© 2026 aepark0120.Clinical Trial Project Management located in Seoul, South Korea</p>
     </footer>
 
 </body>
 </html>
-
