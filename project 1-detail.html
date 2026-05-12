@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* 기본 테마 설정 */
+    :root {
+        --primary-color: #f97316;    /* 신뢰감을 주는 블루 */
+        --secondary-color: #475569;  /* 활력을 주는 오렌지 */
+        --bg-color: #fff7ed;         /* 아주 연한 그레이 배경 */
+        --text-color: #431407;       /* 짙은 차콜색 글자 */
+        --card-bg: #ffffff;          /* 카드 배경색 */
+    }
+
+    body {
+        background-color: var(--bg-color);
+        font-family: 'Pretendard', 'Inter', -apple-system, sans-serif;
+        line-height: 1.7;
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 상단 메뉴바 */
+    nav {
+        width: 100%;
+        background: var(--card-bg);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+    }
+    nav b {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        letter-spacing: -1px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    /* 메인 카드 레이아웃 */
+    main {
+        max-width: 800px;
+        width: 90%;
+        margin: 3rem 0;
+        background: var(--card-bg);
+        padding: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+        letter-spacing: -0.05em;
+    }
+
+    h1 b { color: var(--primary-color); }
+
+    h3 {
+        color: var(--secondary-color);
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+
+    ul {
+        padding-left: 1.2rem;
+    }
+
+    li {
+        margin-bottom: 0.8rem;
+    }
+
+    footer {
+        margin-bottom: 3rem;
+        color: #94a3b8;
+        font-size: 0.9rem;
+    }
+    /* 이 코드가 있어야 'card'라는 이름표를 붙인 상자가 예뻐집니다 */
+.card {
+    background-color: white;      /* 배경은 하얗게 */
+    border: 1px solid #ddd;       /* 연한 회색 테두리 */
+    border-radius: 12px;          /* 모서리를 둥글게 */
+    padding: 20px;                /* 안쪽 여백 (글자와 테두리 사이) */
+    margin-bottom: 20px;          /* 상자 바깥 아래쪽 여백 (상자끼리 거리 두기) */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* 은은한 그림자 */
+}
+    .log-date {
+        font-size: 0.7rem;
+        color: #94a3b8;
+        font-weight: bold ;
+        margin-bottom: 10px;
+        border-left: 4px solid #007bff;
+        padding-left: 10px;
+        display: block;
+    }
+
+@media (max-width: 600px) {
+    body {
+        margin: 20px;
+    }
+    nav {
+        flex-direction: column !important;
+        gap: 2px;
+        padding: 0.3rem 0 !important;
+        margin-bottom: -9px;    
+        }
+    nav ul {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: left !important;
+        gap: 1px;
+        width: 90%;
+        padding: 5px0 !important;
+        font-size: 0.6rem;  
+        }
+    nav ul li {
+        font-size: 1rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column !important;
+        align-items: left !important;
+        width: 90%;
+        text-align: center;
+        padding: 1px 0;
+        border-bottom: 1;
+        }
+    main {  
+        padding: 0.8rem;
+        margin: 10px 0;
+        border-radius: 1rem;
+    }
+    h1 {
+        font-size: 0.8rem;
+       }  
+       
+        </style>
+</head>
+<body>
+
+    <!-- 상단 메뉴 (Navigation) -->
+    <nav>
+        <b>aepark0120</b>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" style="text-decoration: none; color: inherit;">Projects</a></li>
+            <li>aepark0120@gmail.com</li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Projects 섹션 시작 -->
+    <section id="projects-section">
+        <h2 style=""margin-left: 10px;">My Projects</h2>
+            
+    <div class="project-item card">
+        <h3>Project 1: Buidling my own place_Homepage</h3>
+        <p> Daily practice with Gemini. </p>
+    </div>
+
+    <main class = "container">
+        <header class = "detail-header">
+            <h1>Project 1: Building my own place_Homepage</h1>
+            <p></p>
+        </header>
+    
+        <article class=""log-entry card">
+            <div class="log-date">2026-05-14 (Thursday)</div>
+            <h2> Starting creating log </h2>
+            <p> 2026년 5월 5일 "나만의 홈페이지를 만들고 싶어." 라는 프롬프트로부터 시작된 나의 Project 1 </p>
+            <p> AI 를 개인 Tutor 로 사용해야한다는 인플루언서의 조언에 영감을 받아 "남들도 하는데 나도 할 수 있다." 라는 마음으로 맨 땅에 헤딩하듯 해본다.</p>
+            <ul>
+                <li>2026-05-14: Project 시작</li>
+                <li> 아직 갈 길이 멀지만, 계속 해보는 거지 뭐! </li>
+            </ul>
+            </article>
+
+        </main>
+
+</section>
+    <hr>
+
+    <!-- 하단 정보 (Footer) -->
+    <footer>
+        <p>© 2026 aepark0120.Clinical Trial Project Management located in Seoul, South Korea</p>
+    </footer>
+
+</body>
+</html>
